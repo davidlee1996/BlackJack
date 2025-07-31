@@ -18,7 +18,7 @@ const Card = ({ rank, suit, faceDown = false }) => {
     '♣': 'clubs'
   };
 
-  const fileName = `${rank}_${suitMap[suit]}.png`.toLowerCase();
+  const fileName = `${rank}_of_${suitMap[suit]}.png`.toLowerCase();
 
   return (
     <img
