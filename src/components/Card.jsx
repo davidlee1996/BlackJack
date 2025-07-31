@@ -8,6 +8,7 @@ const Card = ({ rank, suit, faceDown = false }) => {
         alt="Face-down card"
         className="w-16 h-24 m-1 rounded shadow"
       />
+    );
   }
 
   const suitMap = {
