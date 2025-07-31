@@ -14,8 +14,8 @@ const Card = ({ rank, suit, faceDown = false }) => {
 
   return (
     <div className={`border p-2 m-1 text-center w-16 h-24 bg-white rounded shadow flex flex-col justify-between font-casino text-black`}>
-      <div className={suitColor}>{rank}</div>
-      <div className={suitColor}>{suit}</div>
+      <div>{rank}</div>
+      <div>{suit}</div>
     </div>
   );
 };
