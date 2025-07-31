@@ -29,9 +29,9 @@ export const calculateHandTotal = (hand) => {
   let aces = 0;
 
   for (let card of hand) {
-    if (['J', 'Q', 'K'].includes(card.rank)) {
+    if (['Jack', 'Queen', 'King'].includes(card.rank)) {
       total += 10;
-    } else if (card.rank === 'A') {
+    } else if (card.rank === 'Ace') {
       aces += 1;
       total += 11;
     } else {
