@@ -12,8 +12,8 @@ const GameBoard = ({
   onRestart,
 }) => {
   return (
-    <div className="p-4 max-w-xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4 text-center">BlackJack</h1>
+    <div className="p-4 max-w-xl mx-auto bg-casino-green min-h-screen font-casino text-white">
+      <h1 className="text-3xl font-bold mb-4 text-center text-casino-gold">BlackJack</h1>
 
       <Hand
         title="Dealer's Hand"
@@ -29,7 +29,7 @@ const GameBoard = ({
         disabled={gameStatus !== 'playing'}
       />
 
-      {message && <div className="mt-4 text-center text-lg">{message}</div>}
+      {message && <div className="mt-4 text-center text-lg text-casino-gold">{message}</div>}
     </div>
   );
 };
