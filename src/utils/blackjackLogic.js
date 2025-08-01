@@ -29,16 +29,17 @@ export const calculateHandTotal = (hand) => {
   let aces = 0;
 
   for (let card of hand) {
-    if (['Jack', 'Queen', 'King'].includes(card.rank)) {
+    if (['J', 'Q', 'K'].includes(card.rank)) {
       total += 10;
-    } else if (card.rank === 'Ace') {
+    } else if (card.rank === 'A') {
       aces += 1;
-      total += 11;
+      total += 11; // count as 11 initially
     } else {
       total += parseInt(card.rank);
     }
   }
 
+  // Downgrade Aces from 11 to 1 as needed
   while (total > 21 && aces > 0) {
     total -= 10;
     aces -= 1;
@@ -46,3 +47,4 @@ export const calculateHandTotal = (hand) => {
 
   return total;
 };
+
