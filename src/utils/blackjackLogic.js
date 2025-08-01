@@ -31,9 +31,9 @@ export const calculateHandTotal = (hand) => {
   for (let card of hand) {
     const rank = (card.rank || '').toUpperCase();
 
-    if (['Jack', 'Queen', 'King'].includes(rank)) {
+    if (['JACK', 'QUEEN', 'KING'].includes(rank)) {
       total += 10;
-    } else if (rank === 'Ace') {
+    } else if (rank === 'ACE') {
       aces += 1;
       total += 11;
     } else {
