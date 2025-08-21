@@ -4,7 +4,7 @@ A simple, interactive Blackjack game built with **React** and **Tailwind CSS**, 
 
 ## 🚀 Live Demo
 
-🔗 [Play Now on Vercel](https://your-vercel-app-url.vercel.app)
+🔗 [Play Now on Vercel](black-jack-kohl-nu.vercel.app)
 
 ---
 
